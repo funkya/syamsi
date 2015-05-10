@@ -1,0 +1,224 @@
+/* NAMA         : SYAMSI RIDWAN FALAH 
+   NRP          : 143040046 
+   KELAS        : A 
+   DESCRYPTION  : MEMBUAT SEBUAH HALAMAN WEBSITE SEPERTI PARALLAX, TETAPI PARALLAX YANG HORIZONTAL 
+   TAMBAHAN     : PROGRESS NYA BARU SEDIKIT , 
+                 INSYAALLAH SEKITAR 1 MINGGU LAGI SEMUANYA 
+                 SUDAH BERES TUGAS BESAR NYA. 
+                 BELUM MENAMBAHKAN SLIDER PADA 
+                 HALAMAN, SERTA MASIH TERLIHAT KAKU DESIGN-NYA
+   */
+
+
+html,
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+}
+
+/* menyembunyikan scrollbars horizontal, ketika menggunakan scrollbars yg vertikal disebelah kanan*/
+body
+{
+  overflow-x: hidden;
+  background: url('../images/bg.jpg') repeat top left;
+  font-family: cursive;
+}
+
+/* style untuk header dan navigasi */
+
+.logo {
+   position: fixed;
+}
+
+#header{
+    /*background-image: url(../images/inner_top_bg.png);*/
+    background-position: top;
+    background: #2980b9;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 2;
+    text-transform: uppercase;
+}
+ 
+nav ul{
+    /*background: #2980b9;*/
+    width: 600px;
+    height: 40px;
+    float: right;
+}
+ 
+nav ul a li{
+    margin-right: -4px;
+    /*background: #2980b9;*/
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+}
+ 
+nav ul a li:hover{
+    background: #ffffff;
+}
+ 
+nav ul li .navtext:hover{
+    color: #3498db;
+}
+ 
+nav ul li .navtext{
+    text-align: center;
+    font-family: aBeeZee;
+    font-size: 12pt;
+    color: #ffffff;
+    margin: 10px 0 0 0;
+}
+
+/* Akhir Header dan navigasi */
+
+/**
+  * Penting!!: menjaga position tetap fixed,
+  * Jika kamu ingin membuat navigasi tetap diatas browser
+  */
+.scroll
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+.horizon
+{
+  z-index: 1;
+  width: auto;
+}
+
+.middle
+{
+  z-index: 10;
+  width: auto;
+}
+
+.front
+{
+  top: 120px;
+  z-index: 100;
+  width: auto;
+}
+
+/* description */
+
+.page {
+  top: 0;
+  /*width: 500px;*/
+  background-image: url(../images/Background.jpg);
+  background-size: 100%;
+  background-position: ;
+  padding: 10px 30px;
+  border: 2px #eee solid;
+  border-radius: 15px;
+  position: absolute;
+}
+
+/* Beranda */
+
+.beranda {
+  left: 200px;
+  width: 900px;
+
+}
+
+/* about me */
+
+.about {
+  left: 1500px;
+  width: 800px;
+  margin-bottom: 25px;
+}
+
+
+/* Portofolio */
+
+.portofolio {
+  left: 2450px;
+  width: 650px;
+  height: 350px;
+}
+
+/* go to my portofolio tag */
+.sidebar a { 
+  width: 150px;
+  float: right;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  margin: 100px auto;
+  border-left: 5px double black;
+}
+
+a:hover {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Login */
+
+.login {
+  left: 3800px;
+  width: 350px;
+  background-image: url(../images/green-blue.jpg);
+}
+
+input[type=text],input[type=password],input[type=email] {
+       width: 70%;
+       height: 30px;
+       padding: 5px;
+       margin-bottom: 25px;
+       margin-top: 5px;
+       border: 2px solid #ccc;
+       color: black;
+       font-size: 13px;
+       border-radius: 5px;
+}
+
+label{
+       color: black;
+       text-shadow: 0 1px 0 #fff;
+       font-size: 13px;
+       font-weight: bold;
+}
+
+input[type=submit]{
+       font-size: 16px;
+       background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+       border: 1px solid #e5a900;
+       color: #4E4D4B;
+       font-weight: bold;
+       cursor: pointer;
+       width: 50%;
+       border-radius: 5px;
+       padding: 10px 0;
+       outline:none;
+}
+ 
+input[type=submit]:hover{
+        background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+}
+
+/* Contact */
+
+.contact {
+  font-family: helvetica;
+  left: 4900px;
+  width: 600px;
+}
+

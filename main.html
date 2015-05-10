@@ -1,0 +1,272 @@
+<!-- /* NAMA         : SYAMSI RIDWAN FALAH 
+   NRP          : 143040046 
+   KELAS        : A 
+   DESCRYPTION  : MEMBUAT SEBUAH HALAMAN WEBSITE SEPERTI PARALLAX, TETAPI PARALLAX YANG HORIZONTAL 
+   TAMBAHAN     : PROGRESS NYA BARU SEDIKIT , 
+                 INSYAALLAH SEKITAR 1 MINGGU LAGI SEMUANYA 
+                 SUDAH BERES TUGAS BESAR NYA. 
+                 BELUM MENAMBAHKAN SLIDER PADA 
+                 HALAMAN, SERTA MASIH TERLIHAT KAKU DESIGN-NYA
+   */ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Tugas Besar PW1</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/social.css" />
+    <link rel="stylesheet" type="text/css" href="css/upload.css" />
+
+    <!-- bxSlider CSS file -->
+    <link href="js/jquery.bxslider.css" rel="stylesheet" />
+
+    <style type="text/css">
+    
+    .gambar {
+            width: 442px;
+           /*float: right;*/
+            margin: 10px auto;
+          }
+
+    </style>
+
+    <!--  javascript form login-->
+     <script src="js/login.js"></script>
+
+      
+
+    <!-- jQuery library (served from Google) -->
+      <script src="js/jquery - Copy.js"></script>
+    <!-- bxSlider Javascript file -->
+      <script src="js/jquery.bxslider.js"></script>
+
+      <script type="text/javascript">
+
+          $(document).ready(function(){
+              $('.bxslider').bxSlider();
+          });
+      
+      </script>
+
+</head>
+
+<body>
+
+ 
+    
+    <!-- header dan navigasi -->
+    	<div id="header">
+    		<div class="logo">
+    		<a href="#">
+    			<img src="images/Reflex_Welcome.png" alt="welcome">
+    		</a>
+    		</div>
+	            <nav>
+	                <ul>
+	                    <a href="#"><li><p class="navtext">Beranda</p></li></a>
+                      <a href="cv1.html"><li><p class="navtext">CV</p></li></a>
+	                    <a href="#"><li><p class="navtext">About Me</p></li></a>
+	                    <a href="#"><li><p class="navtext">Contact</p></li></a>
+	                    <a href="#"><li><p class="navtext">Login</p></li></a>
+	                </ul>
+	            </nav>
+
+        </div>
+
+
+    <!-- Beranda -->
+    <div class="horizon scroll">
+        <img src="images/horizon.png" alt="" />
+    </div>
+    <!-- Akhir Beranda -->
+
+    
+    <div class="middle scroll">
+        <img src="images/middle.png" alt="" />
+    </div>
+    
+
+    
+    <div class="front scroll">
+        <img src="images/front.png" alt="" />
+
+
+        <div class="beranda page">
+          <h1> Selamat Datang Di Halaman Website Ku</h1>
+          <p></p>
+        
+          <!-- Penambahan Slider -->
+
+        <section class="gambar">
+          <ul class="bxslider">
+              <li>
+                <img src="images/religi.png" alt="Slide" title="Quotes That Will Free Your Mind" />
+              </li>
+              <li>
+                <img src="images/blog.png" alt="Slide" title="Blog & Note of Nurul Imam" />
+              </li>
+              <li>
+                <img src="images/blues.png" alt="Slide" title="Full Moon Blues" />
+              </li>
+              <li>
+                <img src="images/religi.png" alt="Slide" title="Islamic Quotes" />
+              </li>
+              <li>
+                <img src="images/grid.png" alt="Slide" title="Blank Grid Framework" />
+              </li>
+               <li>
+                <img src="images/design-colors.jpg" alt="Slide" title="" width="442px" height="285px">
+              </li>
+              <li>
+                <img src="images/nature-photo.png" alt="Slide" title="" width="442px" height="285px">
+              </li>
+              <li>
+                <img src="images/nature-photo2.png" alt="Slide" title="" width="442px" height="285px">
+              </li>
+              <li>
+                <img src="images/nature-photo3.png" alt="Slide" title="" width="442px" height="285px">
+              </li>
+          </ul>
+        </section>
+
+        <!-- Akhir dari Penambahan Slider -->
+          
+        <!-- Social Navigasi di sebelah kiri -->
+
+        <ul class="social-nav model-0">
+        <li>
+          <a href="https://twitter.com/syamsiiii" class="twitter">
+            <img src="images/Twitter.png" width="48px" height="48px">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/syamsi.ridwan.5" class="facebook"> 
+            <img src="images/facebook-icon.png" width="48px" height="48px">
+          </a>
+        </li>
+        <li>
+          <a href="https://plus.google.com/u/0/106666042755578426926/posts" class="google-plus">
+            <img src="images/Google-Plus-icon.png" width="48px" height="48px">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.pinterest.com/" class="pinterest">
+            <img src="images/pinterest.png" width="48px" height="48px">
+          </a>
+        </li>
+      </ul>
+
+      <!-- Akhir dari Social Navigasi  -->
+
+  </div>
+
+  <!-- Akhir Dari Beranda  -->
+
+
+        <!-- About Me -->
+
+        <div class="about page">
+        	<img src="images/aboutme.jpg" alt="">
+        	<!-- <div class="profile"> -->
+        		SYAMSI RIDWAN 
+        	
+        </div> <!-- </div> -->
+        <!-- Akhir About Me -->
+
+        <!-- Portofolio -->
+
+        <div class="portofolio page">
+        <!-- Dibawah ini merupakan form untuk mengupload portofolio  -->
+          <aside>
+            <div class="upload">
+              <form>
+                <fieldset class="field">
+
+                  <legend>UPLOAD PORTOFOLIO</legend>
+                  <span>Nama</span> <br />
+                  <input type="text" name="nfile" placeholder="nama file">
+                  <br />
+
+                  <span>Portofolio</span> <br />
+                  <input type="file" name="portofolio" placeholder="upload portofolio">
+                  <a href="">
+                    <input type="button" value="Upload">
+                  </a>
+
+                </fieldset>
+              </form>
+            </div>
+          </aside>
+  <!-- Akhir dari form upload portofolio -->
+
+        <div class="sidebar">
+              <a href="">Go to My Portofolio</a>          
+        </div>
+        <div class="clear"></div>
+		    </div>
+
+		<!-- Login -->
+
+		<div class="login page">
+			<h2>Login</h2>
+				<form id="form_id" method="post" name="myform">
+					  <label>User Name :</label></br>
+					  <input type="text" name="username" id="username" placeholder="username"/></br>
+			 
+					  <label>Password :</label></br>
+					  <input type="password" name="password" id="password" placeholder="password"/></br>
+			 
+					  <input type="submit" value="Login" id="submit" onclick="validate()"/>
+				</form>
+			
+		</div>
+
+		<!-- Akhir Login -->
+
+		<!--  -->
+
+		<div class="contact page">
+			<h2>Contact</h2>
+
+			<form id="form_id" method="post" name="myform">
+					  <label>Name :</label></br>
+					  <input type="text" name="name" id="name" placeholder="name"/></br>
+			 
+					  <label>Email :</label></br>
+					  <input type="email" name="email" id="email" placeholder="email"/></br>
+					  <label>Message :</label><br>
+					  <textarea type="text" name="message" cols="60" rows="8"></textarea>
+					  <br><br>
+			 
+					  <input type="submit" value="Send" id="submit" onclick="validate()"/>
+				</form>
+			
+    	</div>
+    
+    
+    <!-- Script plugin horizontal scroll -->
+    <script type="text/javascript" src="../src/jquery.jInvertScroll.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        var elem = $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+            {
+            height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                console.log(percent);
+            }
+        });
+
+        $(window).resize(function() {
+          if ($(window).width() <= 768) {
+            elem.destroy();
+          }
+          else {
+            elem.reinitialize();
+          }
+        });
+    }(jQuery));
+    </script>
+    
+</body>
+</html>

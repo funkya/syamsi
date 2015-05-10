@@ -1,0 +1,75 @@
+
+body {
+	background-color: lightblue;
+	background-size: 100%;
+}
+
+aside {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+}
+
+.upload {
+	position: absolute;
+}
+
+.field {
+	width: 300px;
+	height: 300px;
+	padding: 20px 20px 20px 20px;
+	border-radius: 15px 50px;
+	border: 5px solid white;
+}
+
+.field legend {
+	font-size: 25px;
+	font-family: cursive; ;
+	padding: 10px 10px 10px 10px;
+	color: #00b8ee;
+}
+
+.field span {
+	font-size: 15px;
+	font-family: cursive;
+	color: white;
+	padding-left: 15px;
+}
+
+.field input {
+	height: 30px;
+	width: 250px;
+	margin: 10px 10px 10px 15px;
+	background-color: transparent;
+	font-family: cursive;
+	font-size: 15px;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px;
+	color: white;
+}
+
+.field a {
+	text-decoration: none;
+}
+
+.field input[type="button"] {
+	text-decoration: none;
+	background-color: white;
+	position: absolute;
+	right: 30px;
+	color: #332c2b;
+	width: 70px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.field input:hover[type="button"] {
+	background-color: green;
+}
+
+.field input:active[type="button"] {
+	background-color: #25201f;
+	color: #00b8ee;
+}
+
